@@ -1,22 +1,3 @@
---[[----------------------------------------------------------------------------
-
-  Application Name:
-  PolynomFitting
-                                                                                             
-  Summary:
-  Extract objects on a curved surface by fitting a polynomial to the surface,
-  and then find measurements above the fitted polynomial.
-   
-  How to Run:
-  Starting this sample is possible either by running the app (F5) or
-  debugging (F7+F10). Setting breakpoint on the first row inside the 'main'
-  function allows debugging step-by-step after 'Engine.OnStarted' event.
-  Results can be seen in the viewer on the DevicePage.
-  
-  More Information:
-  Tutorial "Algorithms - Filtering and Arithmetic".
-
-------------------------------------------------------------------------------]]
 
 --Start of Global Scope---------------------------------------------------------
 local thicknessThreshold = 0.2
