@@ -1,10 +1,15 @@
 ## SurfaceFitterPolynomial
+
 Fitting a polynomial to a heightmap
+
 ### Description
-This Sample shows how to use the surface fitter to fit a polynomial to a 
-curved surface in a heightmap, and then subtract this to find pixels deviating 
+
+This Sample shows how to use the surface fitter to fit a polynomial to a
+curved surface in a heightmap, and then subtract this to find pixels deviating
 from the model.
+
 ### How to Run
+
 Starting this sample is possible either by running the App (F5) or
 debugging (F7+F10). Setting breakpoint on the first row inside the 'main'
 function allows debugging step-by-step after 'Engine.OnStarted' event.
@@ -17,4 +22,5 @@ required. For example SIM4000 with latest firmware. Alternatively the Emulator
 on AppStudio 2.3 or higher can be used.
 
 ### Topics
-Algorithm, Image-3D, Fitting, Measurement, Sample, SICK-AppSpace
+
+algorithm, image-3d, fitting, measurement, sample, sick-appspace
