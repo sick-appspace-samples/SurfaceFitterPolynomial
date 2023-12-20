@@ -8,7 +8,7 @@ surfaceFitter:setFitMode("RANSAC")
 surfaceFitter:setOutlierMargin(thicknessThreshold)
 
 -- Create a viewer
-local viewer = View.create("viewer2D1")
+local viewer = View.create()
 local hmDeco = View.ImageDecoration.create()
 
 --End of Global Scope-----------------------------------------------------------
@@ -16,10 +16,10 @@ local hmDeco = View.ImageDecoration.create()
 --Start of Function and Event Scope---------------------------------------------
 
 local function main()
-  
+
   -- Load image
   local image = Object.load('resources/twoObjects.json')
-  
+
   -- Find objects
   local zIm = image[1]    -- Heigth
   local im = image[2]     -- Intensity
@@ -52,7 +52,7 @@ local function main()
   surfaceFitter:setFitMode("RANSAC")
   local plane = surfaceFitter:fitPlane(zIm, trayRegion)
   local imDiff = Image.subtractPlane(zIm, plane, trayRegion, true)
-  
+
   hmDeco:setRange(-2, 4)
   viewer:clear()
   viewer:addHeightmap(imDiff, hmDeco)
@@ -82,7 +82,7 @@ local function main()
   viewer:addPixelRegion(objRegions, nil, nil, imId)
   viewer:present()
   Script.sleep(2000)
-  
+
   print('App finished.')
 end
 --The following registration is part of the global scope which runs once after startup
